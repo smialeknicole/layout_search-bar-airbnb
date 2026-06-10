@@ -1,11 +1,25 @@
 @font-face {
-  font-family: Avenir;
+  font-family: Avenir, sans-serif;
+  src: url('./fonts/Avenir.ttc') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: Avenir-Book, sans-serif;
   src: url('./fonts/Avenir-Book.ttf') format('truetype');
   font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Avenir-Heavy, sans-serif;
+  src: url('./fonts/Avenir-Heavy.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 900;
 }
 
 body {
-  font-family: Avenir, serif;
+  font-family: Avenir-Book, serif;
   margin-top: 20px;
 }
 
@@ -31,7 +45,6 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  color: #3D4E61;
 }
 
 .form__input--small {
@@ -44,7 +57,6 @@ body {
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
-  color: #3D4E61;
 }
 
 .form__input:hover {
@@ -58,5 +70,7 @@ body {
 }
 
 .form__input::placeholder {
+  font-family: Avenir-Book, serif;
+  font-weight: 300;
   color: #3D4E61;
 }
